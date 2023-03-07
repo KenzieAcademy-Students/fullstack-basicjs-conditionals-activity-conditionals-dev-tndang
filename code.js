@@ -24,8 +24,11 @@ let number = 15;
 
 function kata1() {
     if (number > 10) {
-        let message = "It is bigger than 10!"
+        let message = 'It is bigger than 10!';
         return message
+    } else {
+        let message = "";
+        return message;
     }
 }
 
@@ -48,11 +51,26 @@ console.log("Exercise Two: DETERMINING A COLOR");
 //   - Your code should return the message variable.
 
 // START your code for Kata/Exercise 2 here 👇
-let color = "";
+let color = "green";
 
 function kata2() {
-	
+	if (color === "blue") {
+        let message = "The sky is blue.";
+        return message;
+    }
+    else if (color === "red") {
+        let message = "The flower is red.";
+        return message;
+    }
+    else if (color === "green") {
+        let message = "The leaf is green.";
+        return message;
+    } else {
+        let message = "It is a different color.";
+        return message;
+    }
 }
+
 let kata2Message = kata2();
 console.log(kata2Message)
 // END your code for Kata/Exercise 2 here 👆
