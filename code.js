@@ -20,13 +20,19 @@ console.log("Exercise One: IS THE NUMBER LARGER THAN 10?"); // Do not modify the
 //   - Your code should return the message variable.
 
 // START your code for Kata/Exercise 1 here 👇
-let number = 5;
+let number = 15;
 
 function kata1() {
-	
+    if (number > 10) {
+        let message = "It is bigger than 10!"
+        return message
+    }
 }
+
 let kata1Message = kata1();
 console.log(kata1Message)
+
+
 // END your code for Kata/Exercise 1 here 👆
 
 // ----------------------------------------------------------------------------------------------
