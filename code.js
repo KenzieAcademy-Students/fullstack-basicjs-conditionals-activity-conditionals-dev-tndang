@@ -20,13 +20,20 @@ console.log("Exercise One: IS THE NUMBER LARGER THAN 10?"); // Do not modify the
 //   - Your code should return the message variable.
 
 // START your code for Kata/Exercise 1 here 👇
-let number = 5;
+let number = 15;
 
 function kata1() {
-	
+    let message = "";
+    if (number > 10) {
+        message = 'It is bigger than 10!';
+    }
+    return message;
 }
+
 let kata1Message = kata1();
 console.log(kata1Message)
+
+
 // END your code for Kata/Exercise 1 here 👆
 
 // ----------------------------------------------------------------------------------------------
@@ -42,11 +49,24 @@ console.log("Exercise Two: DETERMINING A COLOR");
 //   - Your code should return the message variable.
 
 // START your code for Kata/Exercise 2 here 👇
-let color = "";
+let color = "green";
 
 function kata2() {
-	
+    let message;
+	if (color === "blue") {
+        message = "The sky is blue.";
+    }
+    else if (color === "red") {
+        message = "The flower is red.";
+    }
+    else if (color === "green") {
+        message = "The leaf is green.";
+    } else {
+        message = "It is a different color.";
+    }
+    return message
 }
+
 let kata2Message = kata2();
 console.log(kata2Message)
 // END your code for Kata/Exercise 2 here 👆
@@ -66,8 +86,15 @@ console.log("Exercise Three: EVEN OR ODD");
 let integer = 4;
 
 function kata3() {
-
+    let message;
+    if ((integer % 2) === 0) {
+        message = "The number is even.";
+    } else {
+        message = "The number is odd.";
+    }
+    return message
 }
+
 let kata3Message = kata3();
 console.log(kata3Message)
 // END your code for Kata/Exercise 3 here 👆
@@ -94,11 +121,25 @@ console.log("Exercise Four: WHAT KIND OF A NUMBER?");
 // - Your code should return the message variable.
 
 // START your code for Kata/Exercise 4 here 👇
-let count = 17;
+let count = 16;
 
 function kata4() {
-
+    let message;
+    if (count > 10 && count < 20) {
+        if (count === 16) {
+            message = "16!";
+        } else {
+            message = "Between 10 and 20!";
+        }
+    }
+    else if (count >= 20) {
+        message = "20 or greater!";
+    } else {
+        message = "10 or less!"
+    }
+    return message
 }
+
 let kata4Message = kata4();
 console.log(kata4Message)
 // END your code for Kata/Exercise 4 here 👆
