@@ -90,8 +90,15 @@ console.log("Exercise Three: EVEN OR ODD");
 let integer = 4;
 
 function kata3() {
-
+    if (integer % 2) {
+        let message = "The number is odd.";
+        return message
+    } else {
+        let message = "The number is even.";
+        return message
+    }
 }
+
 let kata3Message = kata3();
 console.log(kata3Message)
 // END your code for Kata/Exercise 3 here 👆
